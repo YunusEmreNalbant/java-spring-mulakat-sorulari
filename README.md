@@ -17,10 +17,12 @@ Bu repo, kendi katıldığım mülakatlarda karşılaştığım Java ve Spring B
 
 - Sorular birebir mülakat deneyimlerinden derlenmiştir.
 - Soruların hangi şirketler tarafından sorulduğu belirtilmeyecektir.
-- Sorular her seviyeden kişiye hitap edebilir. Bir ayrım yok.
-- Cevaplar kişiden kişiye veya projeye göre değişiklik gösterebilir.
+- Sorular her seviyeden kişiye hitap edebilir. Bir ayrım yapılmamıştır.
+- Bazı soruların cevapları kişiden kişiye veya projeye göre değişiklik gösterebilir.
 - Farklı görüşlerin ve yaklaşımların olması beklenen bir durumdur.
 - **Soruların cevapları bağlama göre değişebilir.** Tek bir doğru cevap olmayabilir; bu nedenle her soruyu farklı açılardan değerlendirmenizi öneririm.
+- [Sorular ve Cevaplar](sorular.md): Gerçek mülakat soruları ve cevapları (Üzerine tıklayarak cevapları görebilirsiniz).
+
 
 ## 🤝 Katkıda Bulunun
 
@@ -35,7 +37,4 @@ Bu repoyu büyütmek ve daha fazla soruya yer vermek için katkılarınızı mem
 - Soruların net ve anlaşılır olmasına özen gösterin.
 - İsteğe bağlı olarak sorulara açıklamalar veya ipuçları ekleyebilirsiniz.
 - Mülakat sorularını genel olarak paylaşın, gizlilik sözleşmesine (NDA) aykırı detaylar eklemeyin.
-
-
----
 
