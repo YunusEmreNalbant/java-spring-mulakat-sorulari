@@ -21,7 +21,7 @@ Bu repo, kendi katıldığım mülakatlarda karşılaştığım Java ve Spring B
 - Bazı soruların cevapları kişiden kişiye veya projeye göre değişiklik gösterebilir.
 - Farklı görüşlerin ve yaklaşımların olması beklenen bir durumdur.
 - **Soruların cevapları bağlama göre değişebilir.** Tek bir doğru cevap olmayabilir; bu nedenle her soruyu farklı açılardan değerlendirmenizi öneririm.
-- [Sorular ve Cevaplar](sorular.md): Gerçek mülakat soruları ve cevapları (Üzerine tıklayarak cevapları görebilirsiniz).
+- [Sorular ve Cevaplar](questions.md): Gerçek mülakat soruları ve cevapları (Üzerine tıklayarak cevapları görebilirsiniz).
 
 
 ## 🤝 Katkıda Bulunun
