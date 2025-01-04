@@ -477,3 +477,15 @@ OWASP ZAP, Burp Suite, SonarQube, Snyk gibi araçlar güvenlik açıklarını te
   <summary><strong>Mikroservislerde backpressure nasıl yönetilir?</strong></summary>
 Backpressure, bir servisin aşırı yüklenmesini önlemek için kullanılan bir mekanizmadır. Bu, istekleri sınırlayarak, kuyruk uzunluğunu kontrol ederek veya istemcilerin istek hızını yavaşlatarak sağlanabilir. Reactive programming ve akış kontrol mekanizmaları (örneğin, Reactive Streams) bu süreçte yardımcı olabilir.
 </details>
+
+<details>
+  <summary><strong>Dağıtık sistemlerde cache kullandınız mı? Eğer kullandıysanız, nasıl bir yaklaşım izlediniz ve hangi problemleri çözmek için kullandınız?</strong></summary>
+
+Dağıtık sistemlerde cache, performans ve ölçeklenebilirlik açısından kritik bir rol oynayabilir. Örneğin, yoğun bir kullanıcı trafiği altında çalışan bir e-ticaret platformunu ele alalım. Burada, ürün listeleme sayfalarının hızlıca yüklenmesi gerekiyor ve kullanıcıların aynı verilere sıkça eriştiği düşünülürse, cache oldukça faydalı bir çözüm olabilir.
+
+Böyle bir senaryoda, Redis gibi bir in-memory cache çözümü tercih edilebilir. Kullanıcı bir ürün bilgisi talep ettiğinde, önce cache’e bakılır; eğer veri cache’te mevcut değilse, veritabanından çekilip hem kullanıcıya sunulur hem de cache’e yazılır. Bu, "Read-Through" adı verilen bir stratejiyle yapılabilir. Ayrıca, verilerin güncelliğini sağlamak için TTL (Time-to-Live) mekanizması kullanılabilir. Örneğin, ürün bilgileri 24 saat boyunca cache’te tutulabilir, ancak stok durumu veya fiyat gibi dinamik veriler için daha kısa TTL süreleri belirlenebilir.
+
+Bunun dışında, popüler ürünlerin önceden tahmin edilip cache’e alınması (prefetching) veya cache miss durumlarında performansı artıran farklı stratejiler uygulanabilir. Cache’in dolması durumunda LRU (Least Recently Used) gibi bir politika ile eski ya da az kullanılan veriler çıkarılarak yer açılabilir.
+
+Dağıtık sistemlerde ölçeklenebilirliği sağlamak için de Redis Cluster gibi bir çözüm kullanılabilir. Consistent hashing ile verilerin farklı node’lara dengeli şekilde dağıtılması sağlanabilir ve sistemin ölçeklenebilirliği artırılabilir.
+</details>
