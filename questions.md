@@ -489,3 +489,20 @@ Bunun dışında, popüler ürünlerin önceden tahmin edilip cache’e alınmas
 
 Dağıtık sistemlerde ölçeklenebilirliği sağlamak için de Redis Cluster gibi bir çözüm kullanılabilir. Consistent hashing ile verilerin farklı node’lara dengeli şekilde dağıtılması sağlanabilir ve sistemin ölçeklenebilirliği artırılabilir.
 </details>
+
+<details>
+  <summary><strong>Sisteminizde bir API son noktası (endpoint) aşırı yüklenmeye başladı ve bu yüklenme diğer servislerin performansını etkiliyor. Bu durumda ne yapardınız?</strong></summary>
+Rate Limiting: API'yi kullanan her kullanıcı veya istemci için saniyede belirli bir istek sınırı koyarak aşırı yüklenmeyi azaltırım.
+Caching: Eğer bu API statik veya sıkça tekrarlanan veriler sağlıyorsa, önbellekleme yaparım. Örneğin, son kullanıcıya gönderilen veriyi bir süre için cache’te tutarım.
+Queueing (Kuyruklama): İstekleri bir kuyrukta işleme alarak yoğun talebi düzenlerim. Bu, sistemin tamamen çökmesini önleyebilir.
+Yatay Ölçekleme: API'nin bulunduğu servisi ölçeklendirmek, yani daha fazla sunucuya dağıtmak da bir çözüm olabilir.
+</details>
+
+<details>
+  <summary><strong>Sisteminizde bir mikroservis, diğer tüm servislere bağımlı ve bu bağımlılık sistemi yavaşlatıyor. Bu durumda ne yaparsınız?</strong></summary>
+Mikroservislerin bağımlılıklarını azaltmak için olay tabanlı mimari (Event-Driven Architecture) kullanabilirim. Örneğin, bağımlı servislerden alınan verileri bir mesaj kuyruğu (Kafka, RabbitMQ gibi) üzerinden işlemek bu problemi hafifletir.
+
+Servisin tek bir işlemi bloke etmemesi için asenkron iletişim veya yedek veri sunumunu (fallback mekanizması) devreye alabilirim.
+
+Servislerin işlevlerini daha bağımsız hale getirmek için Domain-Driven Design (DDD) yaklaşımıyla bağımlılıkları yeniden değerlendirebilirim.
+</details>
