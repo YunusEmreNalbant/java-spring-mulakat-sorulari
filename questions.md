@@ -185,7 +185,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>@Transactional anotasyonu nedir?</strong></summary>
+  <summary><strong>21. @Transactional anotasyonu nedir?</strong></summary>
 
   - **@Transactional**, Spring'de işlemleri (transactions) yönetmek için kullanılan bir anotasyondur.  
   - Veritabanı işlemlerinde `commit` ve `rollback` yönetimini sağlar.  
@@ -194,7 +194,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>@Transactional propagation type'lardan REQUIRED ile REQUIRED_NEW farkını biliyor musun?</strong></summary>
+  <summary><strong>22. @Transactional propagation type'lardan REQUIRED ile REQUIRED_NEW farkını biliyor musun?</strong></summary>
 
   - **REQUIRED:** Mevcut bir transaction varsa onu kullanır, yoksa yeni bir transaction oluşturur.  
   - **REQUIRED_NEW:** Her zaman yeni bir transaction oluşturur, mevcut transaction'ı askıya alır.
@@ -202,14 +202,14 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Hibernate nedir?</strong></summary>
+  <summary><strong>23. Hibernate nedir?</strong></summary>
 
   - **Hibernate**, Java için bir ORM (Object-Relational Mapping) aracıdır. Veritabanı işlemlerini nesne bazlı bir yaklaşımla gerçekleştirmeyi sağlar.  
 
 </details>
 
 <details>
-  <summary><strong>Spring Security'den bahseder misin? Projeye nasıl ekliyoruz ve eklediğimizde neler oluyor?</strong></summary>
+  <summary><strong>24. Spring Security'den bahseder misin? Projeye nasıl ekliyoruz ve eklediğimizde neler oluyor?</strong></summary>
 
   - **Spring Security**, uygulamalar için kimlik doğrulama (authentication) ve yetkilendirme (authorization) sağlar.  
   - Spring Security eklendiğinde, varsayılan olarak temel bir güvenlik yapılandırması aktif olur (ör. HTTP Basic Authentication).  
@@ -218,7 +218,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Thread Safety nedir? Nasıl sağlanır?</strong></summary>
+  <summary><strong>25. Thread Safety nedir? Nasıl sağlanır?</strong></summary>
 
   - **Thread Safety**, birden fazla thread'in aynı anda bir nesneye erişirken tutarsızlıklara neden olmamasıdır.  
   - Thread Safety sağlamak için şu yöntemler kullanılabilir:
@@ -231,7 +231,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Elimizde bir milyon tane Integer türünde sayı var. Kullanıcı bir sayı girdiğinde (örneğin 10), bu sayının listede kaç kez geçtiğini döndüren bir yapı oluşturmak istiyoruz. Örneğin, 10 sayısı 3 kez tekrar ediyorsa sonuç 3, hiç geçmiyorsa sonuç 0 olacak. Bu problemi hangi collection ile çözerdiniz?</strong></summary>
+  <summary><strong>26. Elimizde bir milyon tane Integer türünde sayı var. Kullanıcı bir sayı girdiğinde (örneğin 10), bu sayının listede kaç kez geçtiğini döndüren bir yapı oluşturmak istiyoruz. Örneğin, 10 sayısı 3 kez tekrar ediyorsa sonuç 3, hiç geçmiyorsa sonuç 0 olacak. Bu problemi hangi yapı ile çözerdin? Nasıl bir yol izlerdin? (kodlama istenmiyor)</strong></summary>
 
   **Cevap: HashMap**
 
@@ -244,7 +244,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 
 
 <details>
-  <summary><strong>@PreAuthorize anotasyonu nedir?</strong></summary>
+  <summary><strong>27. @PreAuthorize anotasyonu nedir?</strong></summary>
 
   - **@PreAuthorize**, Spring Security'de metod seviyesinde yetkilendirme kontrolü yapmak için kullanılan bir anotasyondur.  
   - Metot çağrılmadan önce, kullanıcının belirtilen yetkilere sahip olup olmadığını kontrol eder.  
@@ -255,7 +255,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Microservice mimarisinde iki servis var, bunlar birbiriyle iletişim halinde ve bir servis çöktü. Ne olur? Ne yaparsın?</strong></summary>
+  <summary><strong>28. Microservice mimarisinde iki servis var, bunlar birbiriyle iletişim halinde ve bir servis çöktü. Ne olur? Ne yaparsın?</strong></summary>
 
   - **Durum:** Bir servis çöktüğünde, diğer servis ona bağımlıysa istekler başarısız olur. Bu, sistemin tamamının etkilenmesine neden olabilir. Dağıtık bir sistemde CAP teorimine uygun yapı kurulmalıdır. Buradaki Partiton Tolerance'a uyarsak bu sorunları en aza indiririz.
   
@@ -268,14 +268,14 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Optimistic ve Pessimistic Locking nedir?</strong></summary>
+  <summary><strong>29. Optimistic ve Pessimistic Locking nedir?</strong></summary>
 
   **Detaylı bilgi için Medium yazımı inceleyebilirsiniz: [Hibernate Optimistic ve Pessimistic Locking Nedir?](https://medium.com/@yunusemrenalbant/hibernate-optimistic-ve-pessimistic-locking-nedir-9429c422ccbd)**
 
 </details>
 
 <details>
-  <summary><strong>Microservice projesinde bir servis yavaşladı. Response time yükseldi ve sistemi yavaşlattı. Ne yaparsın?</strong></summary>
+  <summary><strong>30. Microservice projesinde bir servis yavaşladı. Response time yükseldi ve sistemi yavaşlattı. Ne yaparsın?</strong></summary>
 
   - **Durum:** Yavaşlayan bir servis tüm sistemi etkileyebilir, çünkü diğer servisler ona bağımlı olabilir.
 
@@ -294,7 +294,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Apache Kafka'nın genel yapısından bahsedebilir misin?</strong></summary>
+  <summary><strong>31. Apache Kafka'nın genel yapısından bahsedebilir misin?</strong></summary>
 
   Apache Kafka, yüksek performanslı, dağıtık bir mesajlaşma platformudur. Genellikle olay tabanlı mimarilerde, büyük veri işleme veya asenkron iletişim gereksinimlerinde tercih edilir.
 
@@ -319,7 +319,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Monolith ile Microservice mimarilerinin farkı nedir? Hangisi daha avantajlıdır?</strong></summary>
+  <summary><strong>32. Monolith ile Microservice mimarilerinin farkı nedir? Hangisi daha avantajlıdır?</strong></summary>
 
   **Monolith**, tüm uygulamanın tek bir kod tabanı ve süreçte çalıştığı bir mimaridir. Geliştirmesi ve dağıtımı başlangıçta daha kolaydır, ancak büyüdükçe karmaşıklaşır ve bakım zorlaşır.  
 
@@ -331,7 +331,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Bir Spring Boot projesini başlatırken, örneğin IDE'den run tuşuna bastığında neler olur?</strong></summary>
+  <summary><strong>33. Bir Spring Boot projesini başlatırken, örneğin IDE'den run tuşuna bastığında neler olur?</strong></summary>
 
   Bir Spring Boot uygulamasını run ettiğimde ilk olarak **SpringApplication.run()** metodu çağrılır ve bu, uygulamanın tüm başlangıç sürecini tetikler. 
 
@@ -346,7 +346,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Bir projede memory leak olsun istemeyiz. Bunu önlemek için geliştirme aşamasında nelere dikkat edersin?</strong></summary>
+  <summary><strong>34. Bir projede memory leak olsun istemeyiz. Bunu önlemek için geliştirme aşamasında nelere dikkat edersin?</strong></summary>
 
   Memory leak gerçekten kritik bir problem. Geliştirme sırasında buna dikkat etmek için genelde şunları yapıyorum:  
 
@@ -365,7 +365,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Parallelism ve Concurrency aynı şeyler mi?</strong></summary>
+  <summary><strong>35. Parallelism ve Concurrency aynı şeyler mi?</strong></summary>
 
   Hayır, Parallelism ve Concurrency aynı şeyler değildir.  
 
@@ -381,14 +381,14 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Hibernate cache seviyelerini duymuş muydun?</strong></summary>
+  <summary><strong>36. Hibernate cache seviyelerini duymuş muydun?</strong></summary>
 
   Detaylı bilgi için Medium yazımı inceleyebilirsiniz: [Hibernate First Level ve Second Level Cache Nedir?](https://medium.com/@yunusemrenalbant/hibernate-first-level-ve-second-level-cache-nedir-2025643501c3)
 
 </details>
 
 <details>
-  <summary><strong>ArrayList varken LinkedList neden kullanırız?</strong></summary>
+  <summary><strong>37. ArrayList varken LinkedList neden kullanırız?</strong></summary>
 
   ArrayList ve LinkedList'in farklı kullanım senaryoları vardır. LinkedList kullanmayı tercih edeceğim durumlar:
 
@@ -402,7 +402,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Microservice mimarisinde transaction yönetimini nasıl sağlıyorsun?</strong></summary>
+  <summary><strong>38. Microservice mimarisinde transaction yönetimini nasıl sağlıyorsun?</strong></summary>
 
   Detaylı bilgi için Medium yazımı inceleyebilirsiniz: [Microservice Mimarisinde Transaction Yönetimi](https://medium.com/@yunusemrenalbant/microservice-mimarisinde-transaction-y%C3%B6netimi-70d3bb0ecc50)
 
@@ -410,7 +410,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 
 
 <details>
-  <summary><strong>DDD nedir?</strong></summary>
+  <summary><strong>39. DDD nedir?</strong></summary>
 
   DDD, yani **Domain-Driven Design**, iş gereksinimlerini doğru bir şekilde yazılıma yansıtmak için geliştirilmiş bir yaklaşım. Ben genellikle karmaşık projelerde kullanıyorum, çünkü bu yaklaşım sayesinde domain’i anlamlı parçalara ayırabiliyorum. Mesela, **Bounded Context** kavramı burada devreye giriyor. Her bounded context, iş alanının belirli bir bölümüne odaklanmamı sağlıyor ve farklı ekiplerin bağımsız çalışmasına olanak tanıyor.  
 
@@ -421,7 +421,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>CQRS nedir?</strong></summary>
+  <summary><strong>40. CQRS nedir?</strong></summary>
 
   CQRS, yani **Command Query Responsibility Segregation**, basitçe veri yazma ve veri okuma işlemlerini birbirinden ayırıyor. Ben genelde bu yapıyı performans problemleri olan projelerde kullanıyorum. Örneğin, bir kullanıcı sistemi geliştirdiğimizi düşünelim: Kullanıcı verilerini güncelleme (command) işlemleriyle sadece veri okuma (query) işlemlerini ayırdığınızda, her birine özel optimizasyon yapabiliyorsunuz.  
 
@@ -431,7 +431,7 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 </details>
 
 <details>
-  <summary><strong>Kafka ile RabbitMQ farkını biliyor musun?</strong></summary>
+  <summary><strong>41. Kafka ile RabbitMQ farkını biliyor musun?</strong></summary>
 
   **Kafka**, daha çok yüksek hacimli veri akışı ve olay tabanlı sistemler için kullanılıyor. Örneğin, log analitiği ya da gerçek zamanlı veri işleme gibi durumlarda tercih ederim. Mesajlar Kafka’da log olarak saklanır ve tüketildikten sonra bile sistemde kalır. Bu, mesajların yeniden oynatılmasını mümkün kılar. Ayrıca, Kafka’yı bir mesaj kuyruğundan çok bir veri akış platformu olarak görüyorum.  
 
@@ -441,45 +441,45 @@ Bu dosyada, Java/Spring mülakatlarında karşılaşılmış sorular ve cevaplar
 
 </details>
 <details>
-  <summary><strong>Spring Boot uygulamasının başlangıç süresini nasıl optimize edersiniz? Özellikle büyük ve bağımlı bir uygulamada bunu nasıl sağlarsınız?</strong></summary>
+  <summary><strong>42. Spring Boot uygulamasının başlangıç süresini nasıl optimize edersiniz? Özellikle büyük ve bağımlı bir uygulamada bunu nasıl sağlarsınız?</strong></summary>
   Spring Boot başlangıç süresini iyileştirmek için @Lazy anotasyonu ile bean başlatmalarını gerektiğinde yapılacak hale getiririm. Ayrıca, bağımlı konfigürasyonları ve gereksiz Spring starter modüllerini projeden çıkartırım. Bir başka strateji olarak, uygulamayı native bir imaj haline getirip GraalVM ile başlatma süresini azaltmak da mümkündür.
 
 </details>
 
 <details>
-  <summary><strong>Garbage Collection (GC) ayarlarını nasıl optimize edersiniz? Özellikle yüksek bellek tüketimi olan bir Spring Boot uygulamasında hangi ayarları tercih edersiniz?</strong></summary>
+  <summary><strong>43. Garbage Collection (GC) ayarlarını nasıl optimize edersiniz? Özellikle yüksek bellek tüketimi olan bir Spring Boot uygulamasında hangi ayarları tercih edersiniz?</strong></summary>
   Yüksek bellek tüketimi olan bir Spring Boot uygulamasında genellikle G1 Garbage Collector kullanmayı tercih ederim. JVM ayarlarını özelleştirerek maksimum heap boyutunu (Xmx) belirlerim ve XX:MaxGCPauseMillis ile beklenen GC süresini sınırlandırırım. GC loglarını inceleyerek sık veya uzun süren duraklamaları belirleyip gerektiğinde bellek yönetimi için farklı GC algoritmaları (örneğin ZGC veya Shenandoah) deneyebilirim.
 </details>
 
 <details>
-  <summary><strong>Spring Cloud bileşenlerinden hangilerini kullandınız? Özellikle Netflix OSS araçları (Eureka, Ribbon, Hystrix) hakkında deneyiminiz var mı?</strong></summary>
+  <summary><strong>44. Spring Cloud bileşenlerinden hangilerini kullandınız? Özellikle Netflix OSS araçları (Eureka, Ribbon, Hystrix) hakkında deneyiminiz var mı?</strong></summary>
 Eureka ile mikroservisler arasında dinamik servis keşfi sağladım. Yük dengeleme için Ribbon’u, Circuit Breaker için ise Hystrix veya Resilience4j’yi kullanarak uygulamanın kesintisiz çalışmasını garanti altına alıyorum. Özellikle Hystrix ile fallback mekanizmaları kurarak bir serviste sorun çıktığında diğer servislerin etkilenmesini önledim.
 </details>
 
 <details>
-  <summary><strong>Config Server kullanarak yapılandırma yönetimini nasıl merkezi hale getirirsiniz? Config Server’ın faydaları nelerdir?</strong></summary>
+  <summary><strong>45. Config Server kullanarak yapılandırma yönetimini nasıl merkezi hale getirirsiniz? Config Server’ın faydaları nelerdir?</strong></summary>
 Config Server, her bir servisin yapılandırmasını merkezi olarak yönetmemi sağlıyor. Özellikle farklı ortamlarda (prod, dev, test) kullanılacak yapılandırmaları kolayca yönetmek için Spring Cloud Config Server ile her bir servise özel ayarları tanımlar ve git gibi bir kaynak yönetim sistemi ile entegre ederim. Böylece yapılandırmalar bir merkezden güncellenebilir ve değişikliklerde otomatik olarak yeniden yüklenir.
 </details>
 
 <details>
-  <summary><strong>Spring Boot üzerinde uzun süre çalışan işlemler için nasıl optimizasyon yaparsınız? Timeout ve retry gibi stratejileri nasıl belirlersiniz?</strong></summary>
+  <summary><strong>46. Spring Boot üzerinde uzun süre çalışan işlemler için nasıl optimizasyon yaparsınız? Timeout ve retry gibi stratejileri nasıl belirlersiniz?</strong></summary>
   Uzun süren işlemleri yönetmek için, zaman aşımı (timeout) sürelerini @Timeout anotasyonları veya özel konfigürasyonlarla belirlerim. Circuit Breaker desenini, özellikle mikroservisler arasındaki çağrılarda Hystrix veya Resilience4j kullanarak uygularım, bu sayede uzun süren işlemler devre dışı bırakılarak sistem performansının düşmesini engeller. Retry stratejileri için ise belirli aralıklarla yeniden denemeler yapılır, ancak her deneme arasında artan bir süre bırakılarak aşırı yükün önüne geçilir.
 </details>
 <details>
-  <summary><strong>OAuth2 ile güvenlik sağlama konusunda neler biliyorsun?</strong></summary>
+  <summary><strong>47. OAuth2 ile güvenlik sağlama konusunda neler biliyorsun?</strong></summary>
 OAuth2, kullanıcıların yetkilendirme süreçlerini üçüncü taraf sağlayıcılar (Google, Facebook vb.) üzerinden yönetmesini sağlar.
 </details>
 <details>
-  <summary><strong> Mikroservislerde güvenlik açıklarını tespit etmek için hangi araçlar kullanılabilir?</strong></summary>
+  <summary><strong>48. Mikroservislerde güvenlik açıklarını tespit etmek için hangi araçlar kullanılabilir?</strong></summary>
 OWASP ZAP, Burp Suite, SonarQube, Snyk gibi araçlar güvenlik açıklarını tespit etmek için kullanılabilir. Ayrıca, runtime güvenliği için Falco, Aqua ve Prisma gibi araçlar da tercih edilebilir.
 </details>
 <details>
-  <summary><strong>Mikroservislerde backpressure nasıl yönetilir?</strong></summary>
+  <summary><strong>49. Mikroservislerde backpressure nasıl yönetilir?</strong></summary>
 Backpressure, bir servisin aşırı yüklenmesini önlemek için kullanılan bir mekanizmadır. Bu, istekleri sınırlayarak, kuyruk uzunluğunu kontrol ederek veya istemcilerin istek hızını yavaşlatarak sağlanabilir. Reactive programming ve akış kontrol mekanizmaları (örneğin, Reactive Streams) bu süreçte yardımcı olabilir.
 </details>
 
 <details>
-  <summary><strong>Dağıtık sistemlerde cache kullandınız mı? Eğer kullandıysanız, nasıl bir yaklaşım izlediniz ve hangi problemleri çözmek için kullandınız?</strong></summary>
+  <summary><strong>50. Dağıtık sistemlerde cache kullandınız mı? Eğer kullandıysanız, nasıl bir yaklaşım izlediniz ve hangi problemleri çözmek için kullandınız?</strong></summary>
 
 Dağıtık sistemlerde cache, performans ve ölçeklenebilirlik açısından kritik bir rol oynayabilir. Örneğin, yoğun bir kullanıcı trafiği altında çalışan bir e-ticaret platformunu ele alalım. Burada, ürün listeleme sayfalarının hızlıca yüklenmesi gerekiyor ve kullanıcıların aynı verilere sıkça eriştiği düşünülürse, cache oldukça faydalı bir çözüm olabilir.
 
@@ -491,7 +491,7 @@ Dağıtık sistemlerde ölçeklenebilirliği sağlamak için de Redis Cluster gi
 </details>
 
 <details>
-  <summary><strong>Sisteminizde bir API son noktası (endpoint) aşırı yüklenmeye başladı ve bu yüklenme diğer servislerin performansını etkiliyor. Bu durumda ne yapardınız?</strong></summary>
+  <summary><strong>51. Sisteminizde bir API son noktası (endpoint) aşırı yüklenmeye başladı ve bu yüklenme diğer servislerin performansını etkiliyor. Bu durumda ne yapardınız?</strong></summary>
 Rate Limiting: API'yi kullanan her kullanıcı veya istemci için saniyede belirli bir istek sınırı koyarak aşırı yüklenmeyi azaltırım.
   
 Caching: Eğer bu API statik veya sıkça tekrarlanan veriler sağlıyorsa, önbellekleme yaparım. Örneğin, son kullanıcıya gönderilen veriyi bir süre için cache’te tutarım.
@@ -502,10 +502,21 @@ Yatay Ölçekleme: API'nin bulunduğu servisi ölçeklendirmek, yani daha fazla 
 </details>
 
 <details>
-  <summary><strong>Sisteminizde bir mikroservis, diğer tüm servislere bağımlı ve bu bağımlılık sistemi yavaşlatıyor. Bu durumda ne yaparsınız?</strong></summary>
+  <summary><strong>52. Sisteminizde bir mikroservis, diğer tüm servislere bağımlı ve bu bağımlılık sistemi yavaşlatıyor. Bu durumda ne yaparsınız?</strong></summary>
 Mikroservislerin bağımlılıklarını azaltmak için olay tabanlı mimari (Event-Driven Architecture) kullanabilirim. Örneğin, bağımlı servislerden alınan verileri bir mesaj kuyruğu (Kafka, RabbitMQ gibi) üzerinden işlemek bu problemi hafifletir.
 
 Servisin tek bir işlemi bloke etmemesi için asenkron iletişim veya yedek veri sunumunu (fallback mekanizması) devreye alabilirim.
 
 Servislerin işlevlerini daha bağımsız hale getirmek için Domain-Driven Design (DDD) yaklaşımıyla bağımlılıkları yeniden değerlendirebilirim.
+</details>
+
+<details>
+  <summary><strong>53. Spring Data JPA kullanarak karmaşık bir sorgu oluşturdunuz ancak performans sorunları yaşadınız. Hangi araçları veya teknikleri kullanarak bu performans sorunlarını analiz eder ve çözersiniz?</strong></summary>
+
+EXPLAIN ile sorgunun execution planını analiz ederim.
+1. Hibernate logging'i açıp üretilen SQL sorgularını incelerim.
+2. Gereksiz EAGER fetch'leri LAZY fetch ile değiştiririm.
+3. Sorguyu optimize etmek için indeks eklerim veya mevcut indeksleri kontrol ederim.
+4. Büyük veri setlerinde Pageable ile pagination kullanırım.
+5. Gerekli alanları çekmek için DTO uygularım
 </details>
