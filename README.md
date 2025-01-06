@@ -12,9 +12,8 @@ Bu repo, kendi katıldığım mülakatlarda karşılaştığım Java ve Spring B
 - Sorular birebir mülakat deneyimlerinden derlenmiştir.
 - Soruların hangi şirketler tarafından sorulduğu belirtilmeyecektir.
 - Sorular genellikle Türkiye'deki bankaların mülakatlarında karşılaşılan sorulardır.
-- Sorular her seviyeden kişiye hitap edebilir. Bir ayrım yapılmamıştır.
+- 5+ yıllık bir deneyimim var. Soruların seviyesini ona göre düşünebilirsiniz.
 - Bazı soruların cevapları kişiden kişiye veya projeye göre değişiklik gösterebilir. Burada amaç sorulan soru tarzlarıdır.
-- Farklı görüşlerin ve yaklaşımların olması beklenen bir durumdur.
 - **Soruların cevapları bağlama göre değişebilir.** Tek bir doğru cevap olmayabilir; bu nedenle her soruyu farklı açılardan değerlendirmenizi öneririm.
-- [Sorular ve Cevaplar](questions.md): Gerçek mülakat soruları ve cevapları (Üzerine tıklayarak cevapları görebilirsiniz).
+- [Sorular ve Cevaplar](questions.md)
 
