@@ -527,3 +527,11 @@ EXPLAIN ile sorgunun execution planını analiz ederim.
   
 Veritabanı normalizasyonu, bir veritabanındaki veri tekrarını azaltmak ve veri tutarlılığını sağlamak için tasarım kurallarının uygulanması sürecidir. Bu işlem, veritabanını bir dizi mantıksal tablolara bölerek, ilişkisel veri modeline uygun hale getirir. Amaç, veri anomalilerini önlemek, depolama alanını optimize etmek ve sorgu performansını artırmaktır. Normalizasyon genellikle 1NF (Birinci Normal Form) ile başlar ve 3NF (Üçüncü Normal Form) veya ihtiyaç duyulursa daha ileri aşamalara kadar devam eder.
 </details>
+
+
+<details>
+  <summary><strong>55. Immutability nedir? niye kullanıyoruz?</strong></summary>
+
+   Detaylı bilgi için Medium yazımı inceleyebilirsiniz: [Java’da Immutable Nedir? Neden Kullanılır?](https://medium.com/@yunusemrenalbant/javada-immutable-nedir-2ff2718c9029)
+
+</details>
