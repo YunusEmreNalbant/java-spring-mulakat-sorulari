@@ -535,3 +535,10 @@ Veritabanı normalizasyonu, bir veritabanındaki veri tekrarını azaltmak ve ve
    Detaylı bilgi için Medium yazımı inceleyebilirsiniz: [Java’da Immutable Nedir? Neden Kullanılır?](https://medium.com/@yunusemrenalbant/javada-immutable-nedir-2ff2718c9029)
 
 </details>
+
+<details>
+  <summary><strong>56. Qualifier anotasyonunu neden kullanırız?</strong></summary>
+
+  Spring'te birden fazla bean tanımlı olduğunda, hangi bean'in kullanılacağını belirlemek için kullanılır. Eğer aynı türde birden fazla bean tanımlanmışsa (örneğin, Service sınıfından iki farklı implementasyon), @Qualifier ile hangi bean'in kullanılacağını belirtiriz.
+
+</details>
