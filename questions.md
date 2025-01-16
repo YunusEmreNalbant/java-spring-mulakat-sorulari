@@ -491,7 +491,7 @@ Dağıtık sistemlerde ölçeklenebilirliği sağlamak için de Redis Cluster gi
 </details>
 
 <details>
-  <summary><strong>51. Sisteminizde bir API son noktası (endpoint) aşırı yüklenmeye başladı ve bu yüklenme diğer servislerin performansını etkiliyor. Bu durumda ne yapardınız?</strong></summary>
+  <summary><strong>51. Sisteminizde bir endpoint aşırı yüklenmeye başladı ve bu yüklenme diğer servislerin performansını etkiliyor. Bu durumda ne yapardınız?</strong></summary>
 Rate Limiting: API'yi kullanan her kullanıcı veya istemci için saniyede belirli bir istek sınırı koyarak aşırı yüklenmeyi azaltırım.
   
 Caching: Eğer bu API statik veya sıkça tekrarlanan veriler sağlıyorsa, önbellekleme yaparım. Örneğin, son kullanıcıya gönderilen veriyi bir süre için cache’te tutarım.
